@@ -18,12 +18,16 @@ export default function Context(props) {
         id:1,
         image : PortfolioImage,
         title: "Portfolio Website",
+        desc: "Personal portfolio website built with React to showcase projects, skills, and experience through a clean, responsive UI.Features reusable components, smooth navigation, and modern front- end best practices."
     }, {
         id: 2,  image: EcommerceImage,
-            title: "ECommerce Website",
+        title: "ECommerce Website",
+        desc: "Personal portfolio website built with React to showcase projects, skills, and experience through a clean, responsive UI.Features reusable components, smooth navigation, and modern front- end best practices."
+
         }, {
-        id: 3,  image: BlogsDataImage,
-            title: "Blogs Website",
+        id: 3, image: BlogsDataImage,
+        title: "Blogs Website",
+        desc: "Personal portfolio website built with React to showcase projects, skills, and experience through a clean, responsive UI.Features reusable components, smooth navigation, and modern front- end best practices."
         },]
     
     const skillsData = [{
