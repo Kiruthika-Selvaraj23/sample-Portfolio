@@ -13,10 +13,10 @@ export default function Footer() {
           </div>
           <div className='flex justify-center'>
               <a href='https://www.linkedin.com/in/kiruthika-2k3' target='_blank' rel="noreferrer">
-                  <img src={LinkedIn} alt="facebook" className='h-[22px] sm:h-[25px] ml-3 mt-1 ' />
+                  <img src={LinkedIn} alt="linkedin" className='h-[22px] sm:h-[25px] ml-3 mt-1 ' />
               </a>
               <a href='https://github.com/Kiruthika-Selvaraj23' target='_blank' rel="noreferrer">
-                  <img src={Github} alt="insta" className='h-[22px] sm:h-[25px] ml-3 mt-1' />
+                  <img src={Github} alt="github" className='h-[22px] sm:h-[25px] ml-3 mt-1' />
               </a>
           </div>
       </footer>
