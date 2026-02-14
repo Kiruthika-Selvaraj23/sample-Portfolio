@@ -4,6 +4,8 @@ import SendImg from '../accets/Send.png'
 import Footer from './Footer'
 import emailjs from "@emailjs/browser"
 
+import SplitText from "./SplitText";
+
 export default function Home() {
     const [showContact, setContact] = useState(false)
     const [showMsgForm, setMsgForm] = useState(false)
@@ -73,13 +75,32 @@ export default function Home() {
         </div>
     )
 
+    const handleAnimationComplete = () => {
+        console.log('All letters have animated!');
+    };
+
   return (
       <>
           <div id='home' className='bg-white mt-[70px] p-3'>
               <div className=' mt-3 flex justify-around items-center'>
                   <div>
                       <h1 className='sm:text-[18px] text-[15px] text-gray-600 font-serif'>Hello, I'm <span className='font-serif text-cyan-600 text-[18px] sm:text-[25px]'>Kiruthika Selvaraj</span></h1>
-                      <p className='text-black font-bold text-[18px] sm:text-[28px] font-serif mt-3'>Frontend Developer and Web Designer</p>
+                      <SplitText
+                          text="MERN Full Stack Developer"
+                          className="text-black font-bold text-[18px] sm:text-[28px] font-serif mt-3"
+                          delay={50}
+                          duration={1.25}
+                          ease="power3.out"
+                          splitType="chars"
+                          from={{ opacity: 0, y: 40 }}
+                          to={{ opacity: 1, y: 0 }}
+                          threshold={0.1}
+                          rootMargin="-100px"
+                          textAlign="center"
+                          onLetterAnimationComplete={handleAnimationComplete}
+                          showCallback
+                      />
+                      
                       <p className='text-gray-500 text-[15px] sm:text-[20px] font-serif mt-3'>I created responsive and dynamic websites with modern web technologies</p>
                       <div className='flex'>
                           <button onClick={() => setMsgForm(true)} className='bg-blue-900 text-[10px] sm:text-[15px] p-1 sm:p-2 rounded-md text-white font-serif mt-5 h-[35px] sm:h-[45px]'>Send Message</button>

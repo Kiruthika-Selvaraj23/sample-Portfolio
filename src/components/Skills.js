@@ -17,7 +17,7 @@ export default function Skills() {
                       <img src={eachItem.techImage} className='h-[50px] sm:h-[80px] w-[50%] sm:w-[26%]' alt={eachItem.topic} />
                       <h1 className='text-teal-800 text-[15px] sm:text-[18px] font-bold font-serif mt-3 mb-3'>{ eachItem.topic}</h1>
                  </li>
-             ))} 
+              ))} 
           </ul>
             </div>
             <Footer/>

@@ -82,7 +82,7 @@ export default function Context(props) {
     const datas = { projectsData, skillsData, projectDetail }
     
   return (
-      <DContext.Provider value={ datas}>
+      <DContext.Provider value={datas}>
           {props.children}
     </DContext.Provider>
   )
