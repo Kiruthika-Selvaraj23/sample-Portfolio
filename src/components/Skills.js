@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
 import { DContext } from '../Context'
 import Footer from './Footer'
-import ScrollStack, { ScrollStackItem } from './ScrollStack'
-
 
 export default function Skills() {
     const {skillsData} = useContext(DContext)
@@ -28,12 +26,3 @@ export default function Skills() {
         </>
   )
 }
-
-{/* <ScrollStack useWindowScroll className="h-[200px]">
-  {skillsData.map(eachItem => (
-    <ScrollStackItem key={eachItem.topic} itemClassName='bg-white p-3 m-5 shadow-md flex flex-col justify-center items-center text-center shadow-gray-600 rounded-md w-[35%] sm:w-[50%] md:w-[22.5%]'>
-      <img src={eachItem.techImage} className='h-[50px] sm:h-[80px] w-[50%] sm:w-[26%]' alt={eachItem.topic} />
-      <h1 className='text-teal-800 text-[15px] sm:text-[18px] font-bold font-serif mt-3 mb-3'>{eachItem.topic}</h1>
-    </ScrollStackItem>
-  ))}
-</ScrollStack> */}
