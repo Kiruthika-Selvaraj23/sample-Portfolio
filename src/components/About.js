@@ -9,10 +9,10 @@ export default function About() {
     return (
       <>
             <div id='about' className='p-3 mt-10'>
-                <h1 className='text-fuchsia-800 italic sm:text-center font-bold text-[20px] sm:text-[28px] font-serif ml-28'>About Me</h1>
+                <h1 className='text-blue-800 italic sm:text-center font-bold text-[20px] sm:text-[28px] font-serif ml-28'>About Me</h1>
                 <p className='text-gray-500 text-[16px] sm:text-[20px] font-serif mt-3 ml-28 sm:text-center'>Let me introduce Myself</p>
           <hr className='bg-gray-400 height-[25px] mt-4 mb-4' />
-          <p className='text-cyan-800 text-[14px] sm:text-[17px] font-serif mt-3 sm:ml-28'>I'm a frontend developer specializing in building interactive and responsive websites. I have a passion for coding and design, and love turning ideas into reality.</p>
+          <p className='text-blue-900 text-[14px] sm:text-[17px] font-serif mt-3 sm:ml-28'>I'm a frontend developer specializing in building interactive and responsive websites. I have a passion for coding and design, and love turning ideas into reality.</p>
           <div className='flex flex-wrap justify-around mt-10'>
                     <div className='bg-slate-300 m-3 shadow-md shadow-slate-300 p-3 rounded-md w-[80%] md:w-[50%] sm:w-[80%]'>
                         <div className='flex'>

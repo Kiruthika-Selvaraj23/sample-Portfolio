@@ -1,7 +1,6 @@
 import React, { createContext } from 'react'
-import PortfolioImage from "./accets/PortflioImage.jpg"
 import EcommerceImage from "./accets/EcommerceImage.jpg"
-import BlogsDataImage from "./accets/BlogsDataImage.jpg"
+import LMS from "./accets/LMS.jpg"
 import HTMLImg from './accets/HTML.png'
 import CSSImg from './accets/CSS.png'
 import JavaScriptImg from './accets/Javascript.png'
@@ -9,25 +8,21 @@ import ReactImg from './accets/React.png'
 import Tailwind from './accets/Tailwind.png'
 import Bootstrap from './accets/Bootstrap.png'
 import Node from './accets/Node.png'
+import Database from "./accets/Database.png"
+import Express from "./accets/Express.png"
 
 
 export const DContext = createContext()
 
 export default function Context(props) {
     const projectsData = [{
-        id:1,
-        image : PortfolioImage,
-        title: "Portfolio Website",
-        desc: "Personal portfolio website built with React to showcase projects, skills, and experience through a clean, responsive UI.Features reusable components, smooth navigation, and modern front- end best practices."
-    }, {
-        id: 2,  image: EcommerceImage,
-        title: "ECommerce Website",
-        desc: "Personal portfolio website built with React to showcase projects, skills, and experience through a clean, responsive UI.Features reusable components, smooth navigation, and modern front- end best practices."
-
+        id: 1,  image: EcommerceImage,
+        title: "ECommerce Website (ECart)",
+        desc: "Developed a full-stack E-Commerce web application (ECart) with secure role-based authentication, robust APIs, and efficient management of products, users, and orders. Built an admin panel for monitoring and CRUD operations, optimizing database performance and scalability to showcase full-stack expertise."
         }, {
-        id: 3, image: BlogsDataImage,
-        title: "Blogs Website",
-        desc: "Personal portfolio website built with React to showcase projects, skills, and experience through a clean, responsive UI.Features reusable components, smooth navigation, and modern front- end best practices."
+        id: 2, image: LMS,
+        title: "Learning Management System",
+        desc: "Developed a front-end LMS web application to showcase courses, detailed syllabi, and allow admins to manage topics efficiently. Integrated an interactive code playground and real-time chat for student engagement, using modern front-end technologies to deliver a responsive, production-ready user experience."
         },]
     
     const skillsData = [{
@@ -52,30 +47,33 @@ export default function Context(props) {
         {
             topic: "Node",
             techImage: Node
+        }, 
+        {
+            topic: "Express Js",
+            techImage: Express
         },
+        {
+            topic: "MongoDB",
+            techImage: Database
+        }
     ]
 
-    const projectDetail = [{
+    const projectDetail = [
+   {
         id: 1,
-        topic: "Personal Portfolio",
-        desc: "Developed a responsive personal portfolio website using React to showcase professional skills, projects, and experience in a structured and visually engaging manner. The application follows modern front-end development practices, emphasizing component reusability, clean architecture, and smooth user interactions. Integrated EmailJS to enable direct communication through a contact form, allowing visitors to send messages without requiring a backend server.The website is optimized for performance and accessibility and is fully responsive across devices, ensuring a consistent user experience on desktops, tablets, and mobile platforms.",
-        techUsed: "React, HTML, CSS, JavaScript, Tailwind, Node",
-                projLink: "https://wikipedia02.ccbp.tech"
-
-    }, {
-        id: 2,
         topic: "ECommerce",
-        desc: "Developed a responsive personal portfolio website using React to showcase professional skills, projects, and experience in a structured and visually engaging manner. The application follows modern front-end development practices, emphasizing component reusability, clean architecture, and smooth user interactions. Integrated EmailJS to enable direct communication through a contact form, allowing visitors to send messages without requiring a backend server.The website is optimized for performance and accessibility and is fully responsive across devices, ensuring a consistent user experience on desktops, tablets, and mobile platforms.",
-        techUsed: "React, HTML, CSS, JavaScript, Tailwind, Node, Hooks, React Router",
-        projLink: "https://bookhub01.ccbp.tech"
+        desc: "Developed a full-stack E-Commerce web application (ECart) with a strong focus on backend architecture and data handling. Designed and implemented role- based modules for users, sellers, and admin with secure authentication and authorization. Built robust backend APIs to manage products, users, and orders efficiently. Implemented server - side logic for order processing, product management, and data validation. Enabled sellers to perform CRUD operations on product listings through well - structured backend services. Developed an admin panel to monitor system activity, manage users, and control platform data. Ensured efficient database integration and optimized queries for performance and scalability. This project highlights my expertise in backend development, API design, database management, and full - stack integration.",
+        techUsed: "HTML, CSS, JavaScript, Tailwind, React, Hooks, React Router, Node, Express, MongoDB, Postman",
+            projLink: "https://bookhub01.ccbp.tech",
+            sourceCode: "https://github.com/Kiruthika-Selvaraj23/ECart"
 
         }, {
-        id: 3,
-        topic: "Block Lists",
-        desc: "Developed a responsive personal portfolio website using React to showcase professional skills, projects, and experience in a structured and visually engaging manner. The application follows modern front-end development practices, emphasizing component reusability, clean architecture, and smooth user interactions. Integrated EmailJS to enable direct communication through a contact form, allowing visitors to send messages without requiring a backend server.The website is optimized for performance and accessibility and is fully responsive across devices, ensuring a consistent user experience on desktops, tablets, and mobile platforms.",
+        id: 2,
+        topic: "Learning Management System",
+        desc: "Developed a front-end Learning Management System (LMS) web application that showcases courses and detailed course syllabi in a clean, intuitive interface. Enabled administrative control by allowing admins to delete specific topics from the syllabus, streamlining content management. Integrated a code playground to provide interactive coding practice for learners, enhancing engagement and skill-building. Implemented a real-time chat box to facilitate student queries and improve communication. Leveraged modern front-end technologies to deliver a responsive, user-friendly experience without backend dependencies. Focused on dynamic content rendering and seamless navigation to improve usability. Designed the system to be scalable, maintainable, and visually appealing, demonstrating full-stack project capabilities on the front-end. Deployed the application to a live environment, showcasing a professional, production-ready web project suitable for portfolio presentation.",
         techUsed: "React, HTML, CSS, JavaScript, Tailwind, Node, Hooks, React Router",
-        projLink: "https://swift07.ccbp.tech"
-
+            projLink: "https://courses-8as6.vercel.app/",
+            sourceCode: "https://github.com/Kiruthika-Selvaraj23/Courses"
     }]
 
     
