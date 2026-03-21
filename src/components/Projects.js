@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { DContext } from '../Context'
 import Footer from './Footer'
 import HoverCard from "./HoverCard"
@@ -14,7 +14,7 @@ export default function Projects() {
 
     const renderProjectDetail = () => (
         <div id='detailsAboutProject' className='flex justify-center'>
-            <div className='sm:w-[80%] bg-blue-100 p-5 mt-9 m-3 rounded-md'>
+            <div className='sm:w-[80%] bg-slate-50 shadow-2xl shadow-gray-700 p-5 mt-9 m-3 rounded-md'>
                 <h1 className='text-center text-[15px] font-bold text-gray-700'>*About the Project*</h1>
                 <div className='sm:flex sm:justify-between w-[90%]'>
                     <h1 className='text-center font-bold underline text-blue-900 italic text-[15px] sm:text-[20px] md:text-[25px]'>{showProjectDetail[0].topic}</h1>

@@ -1,9 +1,16 @@
-import React from 'react'
+import { useContext } from 'react'
 import Footer from './Footer'
-import SkillCards from "./SkillCards"
+// import SkillCards from "./SkillCards"
+import { DContext } from '../Context'
 
 export default function Skills() {
-  // const {skillsData} = useContext(DContext)
+  const { skillsData } = useContext(DContext)
+  
+  // const items = [{ name: "HTML", itemImg: HTMLImg },
+  //   { name: "CSS", itemImg: CSSImg }, { name: "JavaScript", itemImg: JavaScriptImg }, { name: "React", itemImg: ReactImg },
+  //   { name: "TailWind CSS", itemImg: Tailwind }, { name: "Bootstrap", itemImg: Bootstrap }, { name: "Node", itemImg: Node },
+  //   { name: "MongoDB", itemImg: Database }, { name: "Express JS", itemImg: Express }];
+
   
     return (
       <>
@@ -21,8 +28,30 @@ export default function Skills() {
             ))}
           </ul>  */}
 
-             <SkillCards/>
-           
+          <div className="overflow-hidden w-full relative h-[250px] sm:h-[300px]">
+            <ul className="flex animate-marquee whitespace-nowrap will-change-transform w-max">
+              {skillsData.concat(skillsData).map((eachItem, index) => (
+                <li
+                  key={index}
+                  className=" bg-white p-3 m-5 shadow-md flex flex-col justify-center items-center text-center shadow-gray-600 rounded-md w-[170px] sm:w-[250px] md:w-[280px]"
+                >
+                  <img
+                    src={eachItem.techImage}
+                    className="h-[50px] sm:h-[80px] w-[50%] sm:w-[26%]"
+                    alt={eachItem.topic}
+                  />
+                  <h1 className="text-gray-700 text-[15px] sm:text-[18px] font-bold font-serif mt-3 mb-3">
+                    {eachItem.topic}
+                  </h1>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+ 
+             {/* <SkillCards/> */}
+               
+
 
             </div>
             <Footer/>

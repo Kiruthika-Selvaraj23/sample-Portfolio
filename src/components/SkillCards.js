@@ -9,6 +9,7 @@ import Node from '../accets/Node.png'
 import Database from "../accets/Database.png"
 import Express from "../accets/Express.png"
 
+
 export default function ScrollTriggered() {
     return (
         <div style={container}>
@@ -57,7 +58,7 @@ const cardVariants = {
     },
 };
 
-const hue = (h) => `hsl(${h}, 100%, 50%)`;
+// const hue = (h) => `hsl(${h}, 100%, 50%)`;
 
 const container = { margin: "100px auto", maxWidth: 500, paddingBottom: 100, width: "100%" };
 

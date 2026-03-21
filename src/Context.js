@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import { createContext, useState } from 'react'
 import EcommerceImage from "./accets/EcommerceImage.jpg"
 import LMS from "./accets/LMS.jpg"
 import HTMLImg from './accets/HTML.png'

@@ -1,4 +1,3 @@
-import React from 'react'
 import LinkedIn from "../accets/Linkedin.png"
 import Github from "../accets/Github.png"
 

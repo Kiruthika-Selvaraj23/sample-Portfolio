@@ -1,20 +1,48 @@
-import React from 'react'
+// import React from 'react'
 import Graduate from "../accets/Graduate.png"
 import Experience from "../accets/Experience.png"
 import Certification from "../accets/Certificate.png"
 import Goal from "../accets/Goal.png"
 import Footer from './Footer'
+import AnimatedItem from "./Education"
 
 export default function About() {
+    const items = [{
+        specImg: Experience,
+        spec: "Experience",
+        name: "Intern (Full Stack Developer)",
+        desc: "SAN Technovation, Perundurai (Oct 2025 - March 2026)"
+    }, {
+        specImg: Graduate,
+        spec: "Education",
+        name: "BE in Agriculture Engineering (8.9 CGPA)",
+        desc: "Nandha Engineering College(2020-2024)"
+    },  {
+        specImg: Certification,
+        spec: "Certifications",
+        name: "1. Certified MERN Stack Developer",
+        desc: "Issued by NxtWave Disruptive Tech, Hyderabad"
+        }, {
+        specImg: Certification,
+        spec: "Certifications",
+        name: "2. React Developer",
+        desc: "Issued by NxtWave Disruptive Tech, Hyderabad"
+        }, {
+        specImg: Goal,
+        spec: "Acheivements",
+        name: "Completed 100, 50 and 30 days of Coding Challenge",
+        desc: "Conducted by NxtWave Disruptive Tech"
+   }]
+
     return (
       <>
             <div id='about' className='p-3 mt-10'>
                 <h1 className='text-blue-800 italic sm:text-center font-bold text-[20px] sm:text-[28px] font-serif ml-28'>About Me</h1>
                 <p className='text-gray-500 text-[16px] sm:text-[20px] font-serif mt-3 ml-28 sm:text-center'>Let me introduce Myself</p>
-          <hr className='bg-gray-400 height-[25px] mt-4 mb-4' />
+          <hr className='bg-[gray-400] height-[25px] mt-4 mb-4' />
           <p className='text-blue-900 text-[14px] sm:text-[17px] font-serif mt-3 sm:ml-28'>I'm a frontend developer specializing in building interactive and responsive websites. I have a passion for coding and design, and love turning ideas into reality.</p>
-          <div className='flex flex-wrap justify-around mt-10'>
-                    <div className='bg-slate-300 m-3 shadow-md shadow-slate-300 p-3 rounded-md w-[80%] md:w-[50%] sm:w-[80%]'>
+          {/* <div className='flex flex-wrap justify-around mt-10'>
+                    <div className='bg-[#ACCFE6] m-3 shadow-md shadow-slate-300 p-3 rounded-md w-[80%] md:w-[30%] sm:w-[80%]'>
                         <div className='flex'>
                       <img src={ Graduate} className='h-[30px] sm:h-[40px]' alt="education" />
                       <h1 className='text-[15px] sm:text-[18px] font-bold font-serif mt-2 ml-3'>Education</h1>
@@ -28,17 +56,17 @@ export default function About() {
                         <p className='text-black text-[13.5px] sm:text-[15px] font-serif'>Shree Gurukulam Higher Secondary School(2017-2018)</p>
               </div>
                     
-                    <div className='bg-slate-300 m-3 shadow-md shadow-slate-300 p-3 rounded-md w-[80%] md:w-[30%] sm:w-[80%]'>
+                    <div className='bg-[#ACCFE6] m-3 shadow-md shadow-slate-300 p-3 rounded-md w-[80%] md:w-[30%] sm:w-[80%]'>
                   <div className='flex'>
                             <img src={Experience} className='h-[30px] sm:h-[40px]' alt="experience" />
                             <h1 className='text-[15px] sm:text-[18px] font-bold font-serif mt-2 ml-3'>Experience</h1>
                   </div>
                   <hr className='bg-gray-500 border-0 h-0.5 mt-3 mb-3' />
-                        <p className='text-blue-800 text-[13.5px] sm:text-[15px] font-serif'>1. Frontend Developer</p>
-                        <p className='text-black text-[13.5px] sm:text-[15px] font-serif'>XYZ Company, Chennai</p>
+                        <p className='text-blue-800 text-[13.5px] sm:text-[15px] font-serif'>1. Intern (Full Stack Developer)</p>
+                        <p className='text-black text-[13.5px] sm:text-[15px] font-serif'>SAN Technovation, Perundurai (Oct 2025 - March 2026)</p>
                 </div>
                     
-                    <div className='bg-slate-300 m-3 shadow-md shadow-slate-300 p-3 rounded-md w-[80%] md:w-[30%] sm:w-[80%]'>
+                    <div className='bg-[#ACCFE6] m-3 shadow-md shadow-slate-300 p-3 rounded-md w-[80%] md:w-[30%] sm:w-[80%]'>
                         <div className='flex'>
                             <img src={Certification} className='h-[30px] sm:h-[40px]' alt="certification" />
                             <h1 className='text-[15px] sm:text-[18px] font-bold font-serif mt-2 ml-3'>Certifications</h1>
@@ -51,7 +79,7 @@ export default function About() {
                     </div>
                     
 
-                    <div className='bg-slate-300 m-3 shadow-md shadow-slate-300 p-3 rounded-md w-[80%] md:w-[30%] sm:w-[80%]'>
+                    <div className='bg-[#ACCFE6] m-3 shadow-md shadow-slate-300 p-3 rounded-md w-[80%] md:w-[30%] sm:w-[80%]'>
                         <div className='flex'>
                             <img src={Goal} className='h-[30px] sm:h-[40px]' alt="acheivements" />
                             <h1 className='text-[15px] sm:text-[18px] font-bold font-serif mt-2 ml-3'>Achievements</h1>
@@ -61,8 +89,19 @@ export default function About() {
                         <p className='text-black text-[13.5px] sm:text-[15px] font-serif'>Conducted by NxtWave Disruptive Tech</p>
                     </div>
               
-          </div>
+          </div> */}
             </div>
+
+
+            <AnimatedItem
+                items={items}
+                onItemSelect={(item, index) => console.log(item, index)}
+                showGradients
+                enableArrowNavigation
+                displayScrollbar
+            />
+
+ 
             <Footer/>
         </>
   )

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import GirlImage from '../accets/GirlImage.png'
 import SendImg from '../accets/Send.png'
 import Footer from './Footer'
