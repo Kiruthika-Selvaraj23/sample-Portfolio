@@ -43,28 +43,47 @@ function Card({ emoji, title, hueA, hueB, i }) {
         </motion.div>
     );
 }
+// const cardVariants = {
+//     offscreen: { y: 300 },
+//     onscreen: { y: 50, rotate: -10, transition: { type: "spring", bounce: 0.4, duration: 0.8 } },
+// };
+
 const cardVariants = {
-    offscreen: { y: 300 },
-    onscreen: { y: 50, rotate: -10, transition: { type: "spring", bounce: 0.4, duration: 0.8 } },
+    offscreen: { y: 120 },   // smaller entry distance
+    onscreen: {
+        y: 0,                // remove extra downward push
+        rotate: -10,
+        transition: { type: "spring", bounce: 0.4, duration: 0.8 }
+    },
 };
 
 const hue = (h) => `hsl(${h}, 100%, 50%)`;
 
 const container = { margin: "100px auto", maxWidth: 500, paddingBottom: 100, width: "100%" };
+
 const cardContainer = { overflow: "hidden", display: "flex", justifyContent: "center", alignItems: "center", position: "relative", paddingTop: 20, marginBottom: -120 };
-const splash = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, clipPath: "polygon(0% 66%, 100% 48%, 100% 100%, 0% 100%)" };
+const splash = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    transform: "scaleX(0.8)",   // 👈 shrinks width only
+    transformOrigin: "center",
+    clipPath: "polygon(0% 66%, 100% 48%, 100% 100%, 0% 100%)"
+}; const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
 const card = {
-    fontSize: 164,
-    width: 300,
-    height: 430,
+    fontSize: isMobile ? 100 : 164,
+    width: isMobile ? 220 : 300,
+    height: isMobile ? 300 : 430,
     display: "flex",
-    flexDirection: "column", 
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 20,
     background: "#FCFCFC",
 };
-
 const food = [
     [HTMLImg, "HTML", 340, 10],
     [CSSImg, "CSS", 20, 40],
@@ -73,5 +92,6 @@ const food = [
     [Tailwind, "Tailwind", 100, 140],
     [Bootstrap, "Bootstrap", 205, 245],
     [Node, "Node.js", 260, 290],
-    [Database, "Database", 290, 320],
+    [Database, "MongoDB", 290, 320],
+    [Express, "Express JS", 310, 340]
 ];

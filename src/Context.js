@@ -1,4 +1,4 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 import EcommerceImage from "./accets/EcommerceImage.jpg"
 import LMS from "./accets/LMS.jpg"
 import HTMLImg from './accets/HTML.png'
@@ -15,6 +15,9 @@ import Express from "./accets/Express.png"
 export const DContext = createContext()
 
 export default function Context(props) {
+    const [showProjectDetail, setProjectDetail] = useState([])
+    const [isShow, setShow] = useState(false)
+
     const projectsData = [{
         id: 1,  image: EcommerceImage,
         title: "ECommerce Website (ECart)",
@@ -77,7 +80,7 @@ export default function Context(props) {
     }]
 
     
-    const datas = { projectsData, skillsData, projectDetail }
+    const datas = { projectsData, skillsData, projectDetail, showProjectDetail, setProjectDetail, isShow, setShow }
     
   return (
       <DContext.Provider value={datas}>

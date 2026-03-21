@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import { DContext } from '../Context'
+import React from 'react'
 import Footer from './Footer'
 import SkillCards from "./SkillCards"
 
 export default function Skills() {
-    const {skillsData} = useContext(DContext)
+  // const {skillsData} = useContext(DContext)
+  
     return (
       <>
             <div id='skills' className='p-3 mt-10 mb-[80px]'>

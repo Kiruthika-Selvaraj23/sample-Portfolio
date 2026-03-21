@@ -1,8 +1,17 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { DContext } from "../Context";
 
 export default function HoverCard({ image, title, description, id }) {
+
+    const {projectDetail, setProjectDetail, setShow } = useContext(DContext)
+           
+    const clickProject = (id) => {
+               console.log(id)
+               setShow(true)
+               const projData = projectDetail.filter(item => item.id === id)
+               setProjectDetail(projData)
+    }
        
 
     const containerRef = useRef(null);
@@ -63,7 +72,7 @@ export default function HoverCard({ image, title, description, id }) {
                     {title}
                 </h1>
                 <p className="text-center text-gray-600 font-semibold text-[15px] p-3">{ description}</p>
-            </div>
+                </div>
 
             {/* Info overlay */}
             <div
@@ -78,11 +87,12 @@ export default function HoverCard({ image, title, description, id }) {
                     padding: 20,
                     textAlign: "center",
                 }}
-            >
-                <button className='bg-blue-900 text-[12px] sm:text-[15px] p-1 sm:p-2 rounded-[4px] sm:rounded-md text-white font-serif'>View Project</button>
+                >
+                    <a href="#detailsAboutProject">
+                        <button onClick={() => clickProject(Number(id))} className='bg-blue-900 text-[12px] sm:text-[15px] p-1 sm:p-2 rounded-[4px] sm:rounded-md text-white font-serif'>View Project</button>
+                    </a>
+                </div>
             </div>
-            </div>
-          
         </>
     );
 }

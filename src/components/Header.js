@@ -26,7 +26,7 @@ export default function Header() {
       <div className='text-slate-300 flex justify-between fixed top-0 z-50 h-[45p] sm:h-[70px] mt-0 p-3 w-[100%] bg-gray-50 shadow-md shadow-slate-400'>
               <a href='#home' className='flex ml-5 sm:ml-16'>
         <img className='h-[30px] w-[30px] sm:h-[40px] sm:w-[40px]' src={Profile} alt="profile" />
-        <h1 className='text-purple-900 italic font-serif ml-1 sm:ml-2 font-bold mt-1.5 mr-4 sm:mr-0 sm:mt-0 sm:text-[30px]'>Kiruthika</h1>
+        <h1 className='text-blue-950 italic font-serif ml-1 sm:ml-2 font-bold mt-1.5 mr-4 sm:mr-0 sm:mt-0 sm:text-[30px]'>Kiruthika</h1>
               </a>
               <ul className='text-blue-800 hidden md:flex flex-row sm:justify-between w-[100%] sm:w-[50%] mt-2 font-serif text-[15px] sm:text-[22px] sm:mr-3'>
                   <li className='text- hover:text-gray-700 mr-2'><a href='#home'>Home</a></li>
