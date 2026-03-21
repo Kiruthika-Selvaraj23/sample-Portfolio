@@ -101,7 +101,7 @@ export default function Home() {
                           showCallback
                       />
                       
-                      <p className='text-gray-500 text-[15px] sm:text-[20px] font-serif mt-3'>I created responsive and dynamic websites with modern web technologies</p>
+                      <p className='text-gray-500 text-[15px] sm:text-[20px] font-serif mt-3'>I create responsive and dynamic websites with modern web technologies</p>
                       <div className='flex'>
                           <button onClick={() => setMsgForm(true)} className='bg-blue-900 text-[10px] sm:text-[15px] p-1 sm:p-2 rounded-md text-white font-serif mt-5 h-[35px] sm:h-[45px]'>Send Message</button>
                           <p className='text-[15px] sm:text-[20px] text-gray-500 text-center mt-6 ml-3'>- or -</p>
