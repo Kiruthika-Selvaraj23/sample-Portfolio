@@ -82,8 +82,8 @@ export default function Home() {
   return (
       <>
           <div id='home' className='bg-white mt-[70px] p-3'>
-              <div className=' mt-3 flex justify-around items-center'>
-                  <div>
+              <div className='sm:mx-10 lg:mx-12 xl:mt-3 flex justify-around items-center'>
+                  <div className='mx-5'>
                       <h1 className='sm:text-[18px] text-[15px] text-gray-600 font-serif'>Hello, I'm <span className='font-serif text-blue-800 text-[18px] sm:text-[25px]'>Kiruthika Selvaraj</span></h1>
                       <SplitText
                           text="MERN Full Stack Developer"

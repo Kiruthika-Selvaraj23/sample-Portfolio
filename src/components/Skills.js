@@ -10,8 +10,10 @@ export default function Skills() {
   //   { name: "CSS", itemImg: CSSImg }, { name: "JavaScript", itemImg: JavaScriptImg }, { name: "React", itemImg: ReactImg },
   //   { name: "TailWind CSS", itemImg: Tailwind }, { name: "Bootstrap", itemImg: Bootstrap }, { name: "Node", itemImg: Node },
   //   { name: "MongoDB", itemImg: Database }, { name: "Express JS", itemImg: Express }];
-
-  
+  const grouped = [];
+  for (let i = 0; i < skillsData.length; i += 2) {
+    grouped.push(skillsData.slice(i, i + 2));
+  }
     return (
       <>
             <div id='skills' className='p-3 mt-10 mb-[80px]'>

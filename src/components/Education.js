@@ -130,15 +130,15 @@ const AnimatedList = ({
                         onMouseEnter={() => handleItemMouseEnter(index)}
                         onClick={() => handleItemClick(item, index)}
                     >
-                        <div className={`ml-5 sm:ml-20 w-[80%] sm:w-[60%] p-3 sm:p-5 sm:flex bg-[#ACCFE6] rounded-lg ${selectedIndex === index ? '' : ''} ${itemClassName}`}>
-                            <div className='flex min-w-[20%]'>
-                                <img src={item.specImg} className='h-[25px] sm:h-[40px]' alt="education" />
-                                <h1 className=" text-gray-600 ml-3 sm:mt-2 text-[17px] sm:text-[20px] font-semibold">{item.spec}</h1>
+                        <div className={`mx-5 sx:ml-10 lg:ml-20 w-[80%] sm:w-[95%] lg:w-[65%] p-3 sm:p-5 sm:flex bg-[#ACCFE6] rounded-lg ${selectedIndex === index ? '' : ''} ${itemClassName}`}>
+                            <div className='flex min-w-[30%] lg:min-w-[20%]'>
+                                <img src={item.specImg} className='h-[25px] sm:[35px] lg:h-[40px]' alt="education" />
+                                <h1 className=" text-gray-600 ml-3 lg:mt-2 text-[17px] sm:text-[18px] md:text-[20px] font-semibold">{item.spec}</h1>
                             </div>
-                            <div className='hidden sm:block bg-gray-600 p-[0.5px] mx-10'></div>
+                            <div className='hidden sm:block bg-gray-600 p-[0.5px] mx-5 lg:mx-10'></div>
                             <div>
-                                <p className="text-blue-900 mt-1 text-[15px] sm:text-[17px] font-semibold">{item.name}</p>
-                                <p className="text-gray-800 mt-1 text-[15px] sm:text-[17px] font-semibold">{item.desc}</p>
+                                <p className="text-blue-900 mt-1 text-[15px] lg:text-[17px] font-semibold">{item.name}</p>
+                                <p className="text-gray-800 mt-1 text-[15px] lg:text-[17px] font-semibold">{item.desc}</p>
                             </div>
                         </div>
                     </AnimatedItem>
