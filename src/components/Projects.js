@@ -20,7 +20,6 @@ export default function Projects() {
                     <h1 className='text-center font-bold underline text-blue-900 italic text-[15px] sm:text-[20px] md:text-[25px]'>{showProjectDetail[0].topic}</h1>
                     <div className='mt-2 mb-2 sm:mt-0 sm:mb-0'>
                         <a className='text-blue-500 underline italic mr-4 text-[12px] sm:text-[15px] md:text-[20px]' href={showProjectDetail[0].projLink} target='_blank' rel="noreferrer">Project Link</a>
-                        <a className='text-blue-500 underline italic mr-4 text-[12px] sm:text-[15px] md:text-[20px]' href={showProjectDetail[0].sourceCode} target='_blank' rel="noreferrer">Source Code</a>
                     </div>
                 </div>
                 <p className='text-[14px] sm:text-[20px] font-sans text-gray-600 mt-3'>{points
