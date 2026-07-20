@@ -10,8 +10,8 @@ export default function About() {
     const items = [{
         specImg: Experience,
         spec: "Experience",
-        name: "Intern (Full Stack Developer)",
-        desc: "SAN Technovation, Perundurai (Oct 2025 - March 2026)"
+        name: "Full Stack Developer",
+        desc: "SAN Technovation, Perundurai (July 2025 - Present)"
     }, {
         specImg: Graduate,
         spec: "Education",
@@ -29,7 +29,7 @@ export default function About() {
         desc: "Issued by NxtWave Disruptive Tech, Hyderabad"
         }, {
         specImg: Goal,
-        spec: "Acheivements",
+        spec: "Achievements",
         name: "Completed 100, 50 and 30 days of Coding Challenge",
         desc: "Conducted by NxtWave Disruptive Tech"
    }]

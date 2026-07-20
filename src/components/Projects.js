@@ -61,8 +61,8 @@ export default function Projects() {
                     />
                     <HoverCard
                         image={LMS}
-                        title="Learning Management System"
-                        description="Developed a front-end LMS web application to showcase courses, detailed syllabi, and allow admins to manage topics efficiently. Integrated an interactive code playground and real-time chat for student engagement, using modern front-end technologies to deliver a responsive, production-ready user experience."
+                        title="Application Tracking System (ATS)"
+                        description="Designed and developed a full-stack Applicant Tracking System (ATS) enabling end-to-end recruitment lifecycle management, including client onboarding, job requisitions, candidate tracking, and recruiter performance analytics. Implemented RBAC, dashboard reporting, audit logging, and optimized RESTful APIs for scalable enterprise operations."
                         id = "2"
                     />
                 </div>

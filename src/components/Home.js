@@ -58,7 +58,7 @@ export default function Home() {
             <p className='text-gray-500 text-[13px] sm:text-[18px] font-serif'>Full Name:<span className='text-blue-600 sm:ml-3'>Kiruthika Selvaraj</span> </p>
             <p className='text-gray-500 text-[13px] sm:text-[18px] font-serif mt-3'>Email:
                 <span className='text-blue-600 sm:ml-3'>
-                    <a href='mailto:keerthiselvaraj2003@gmail.com'>keerthiselvaraj2003@gmail.com</a>
+                    <a href='mailto:keerthiselvaraj2003@gmail.com'>kiruthikaselvaraj2003@gmail.com</a>
                 </span>
             </p>
             <p className='text-gray-500 text-[13px] sm:text-[18px] font-serif mt-3'>Contact Number:<span className='text-blue-600 sm:ml-3'>6374857178</span></p>
