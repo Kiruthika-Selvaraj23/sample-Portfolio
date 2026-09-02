@@ -10,8 +10,13 @@ export default function About() {
     const items = [{
         specImg: Experience,
         spec: "Experience",
-        name: "Full Stack Developer",
-        desc: "SAN Technovation, Perundurai (July 2025 - Present)"
+        name: "1. Full Stack Developer (Internship)",
+        desc: "Mithra Home Tech Pvt Lmt, Coimbatore (April 2026 - August 2026)"
+    },{
+        specImg: Experience,
+        spec: "Experience",
+        name: "2. Full Stack Developer (Internship)",
+        desc: "SAN Technovation, Perundurai (Oct 2025 - March 2026)"
     }, {
         specImg: Graduate,
         spec: "Education",
